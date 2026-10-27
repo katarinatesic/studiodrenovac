@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Drenovac - Nail studio, Beograd</title>
+<meta name="description" content="Manikir, pedikir i trajni lak u Beogradu. Jedini brzi termini u gradu - sređeni nokti za 30 minuta. Zakazivanje preko WhatsApp-a.">
+<link rel="icon" type="image/png" href="assets/logo-bordo.png">
+<meta property="og:title" content="Studio Drenovac - Nail studio, Beograd">
+<meta property="og:description" content="Sređeni nokti za samo 30 minuta. Manikir, pedikir i trajni lak.">
+<meta property="og:image" content="assets/foto-kafa.jpg">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #F7F3EC; }
+  a { color: #59181E; text-decoration: none; }
+  a:hover { color: #BD4E23; }
+  input, textarea, select, button { font-family: 'Instrument Sans', sans-serif; }
+  #radovi div::-webkit-scrollbar, #recenzije div::-webkit-scrollbar { display: none; }
+</style>
+</helmet>
+
+  <div style="width:100%;background:#F7F3EC;font-family:'Instrument Sans',sans-serif;color:#2A1512;font-size:16px">
+
+    <header style="display:flex;align-items:center;justify-content:space-between;padding:22px 48px;border-bottom:1px solid #E2D8C6">
+      <img src="assets/logo-bordo.png" alt="Studio Drenovac" style="height:50px;width:auto;display:block">
+      <nav style="display:flex;gap:32px;font-size:15px">
+        <a href="#usluge">Usluge</a>
+        <a href="#radovi">Radovi</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div style="display:flex;gap:18px;align-items:center">
+        <a href="{{ instagramHref }}" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex;color:#59181E" style-hover="color:#BD4E23">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4.5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a href="{{ tiktokHref }}" target="_blank" rel="noopener" aria-label="TikTok" style="display:flex;color:#59181E" style-hover="color:#BD4E23">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.85-2.48V9.79a5.67 5.67 0 1 0 4.94 5.62V8.9a7.34 7.34 0 0 0 4.28 1.38V7.19a4.28 4.28 0 0 1-3.22-1.37z"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <div style="position:relative;height:660px;overflow:hidden">
+      <img src="assets/foto-kafa.jpg" alt="Trajni lak, ekspresni termin" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(31,10,8,.85) 0%,rgba(31,10,8,.62) 42%,rgba(31,10,8,.34) 66%,rgba(31,10,8,0) 92%),linear-gradient(100deg,rgba(31,10,8,.55) 0%,rgba(31,10,8,.24) 52%,rgba(31,10,8,0) 82%)"></div>
+      <div style="position:absolute;left:48px;bottom:64px;max-width:600px;display:flex;flex-direction:column;gap:22px">
+        <span style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#F6E7DA">Ekspresni termini</span>
+        <h1 style="font-family:'Instrument Serif',serif;font-size:78px;line-height:.98;margin:0;font-weight:400;color:#FBF7F0;letter-spacing:-.01em">Sređeni nokti<br>za samo <em style="font-style:italic">30 minuta</em></h1>
+        <p style="font-size:18px;line-height:1.6;max-width:38ch;color:#EBDDD0;margin:0;text-wrap:pretty">Ekspresni manikir i pedikir za dane kada nemate vremena, a želite uredne nokte.</p>
+        <div style="display:flex;gap:26px;align-items:center;margin-top:6px">
+          <a href="{{ whatsappHref }}" target="_blank" rel="noopener" style="background:#FBF7F0;color:#2A1512;padding:15px 28px;font-size:15.5px" style-hover="background:#BD4E23;color:#FBF7F0">Pišite na WhatsApp</a>
+          <a href="#usluge" style="color:#EBDDD0;font-size:15.5px;border-bottom:1px solid rgba(235,221,208,.45);padding-bottom:2px" style-hover="color:#FBF7F0">Cenovnik</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:104px 48px;max-width:1240px;margin:0 auto">
+      <h2 style="font-family:'Instrument Serif',serif;font-size:66px;line-height:1;margin:0 0 56px;font-weight:400;white-space:nowrap;letter-spacing:-.015em;color:#59181E">Jedini brzi termini u gradu</h2>
+      <div style="display:grid;grid-template-columns:400px 1fr;gap:0 76px;align-items:stretch">
+        <div style="background-color:#E7DDCB;background-image:url('assets/foto-bela.jpg');background-size:cover;background-position:center;min-height:520px"></div>
+        <div style="display:flex;flex-direction:column">
+          <div style="display:grid;grid-template-columns:96px 1fr;gap:0 20px;padding:0 0 34px;align-items:start">
+            <span style="font-family:'Instrument Serif',serif;font-size:64px;line-height:.8;color:#D9B8A0">01</span>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <h3 style="font-family:'Instrument Serif',serif;font-size:27px;line-height:1.15;margin:0;font-weight:400">Brzo, ali uredno</h3>
+              <p style="font-size:16px;line-height:1.75;margin:0;color:#6E5647;text-wrap:pretty">Obrada zanoktica je suptilnija - poguruju se i uklanja se samo neophodni deo. Postupak je kraći, rezultat uredan.</p>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:96px 1fr;gap:0 20px;padding:34px 0;border-top:1px solid #DED3BF;align-items:start">
+            <span style="font-family:'Instrument Serif',serif;font-size:64px;line-height:.8;color:#D9B8A0">02</span>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <h3 style="font-family:'Instrument Serif',serif;font-size:27px;line-height:1.15;margin:0;font-weight:400">Nešto češći dolasci</h3>
+              <p style="font-size:16px;line-height:1.75;margin:0;color:#6E5647;text-wrap:pretty">Kako bi se ovakav izgled noktiju održao, preporučujemo redovnije dolaske u odnosu na klasične tretmane.</p>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:96px 1fr;gap:0 20px;padding:34px 0 0;border-top:1px solid #DED3BF;align-items:start">
+            <span style="font-family:'Instrument Serif',serif;font-size:64px;line-height:.8;color:#D9B8A0">03</span>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <h3 style="font-family:'Instrument Serif',serif;font-size:27px;line-height:1.15;margin:0;font-weight:400">Pre prvog dolaska</h3>
+              <p style="font-size:16px;line-height:1.75;margin:0;color:#6E5647;text-wrap:pretty">Ukoliko imate materijal na noktima, skidamo ga električnom turpijom. Pri prvom dolasku uvek savetujemo da nokti budu bez materijala, kako bi tretman protekao u predviđenom vremenu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="usluge" style="background:#E7DDCB;padding:104px 48px">
+      <div style="max-width:1240px;margin:0 auto">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid #59181E">
+          <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400">Cenovnik</h2>
+          <span style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6E5647">RSD</span>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 80px;margin-top:52px">
+          <div>
+            <h3 style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23;margin:0 0 6px;font-weight:500">Manikir</h3>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Manikir (sa ili bez običnog laka)</span><span style="font-family:'Instrument Serif',serif;font-size:19px">2500</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Manikir &amp; Classic trajni lak</span><span style="font-family:'Instrument Serif',serif;font-size:19px">3100</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Manikir &amp; Premium trajni lak</span><span style="font-family:'Instrument Serif',serif;font-size:19px">3500</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Muški manikir</span><span style="font-family:'Instrument Serif',serif;font-size:19px">1800</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0"><span>Skidanje tuđeg laka (trajni lak / gel)</span><span style="font-family:'Instrument Serif',serif;font-size:19px">500 / 1000</span></div>
+          </div>
+          <div>
+            <h3 style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23;margin:0 0 6px;font-weight:500">Pedikir</h3>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Pedikir (sa ili bez običnog laka)</span><span style="font-family:'Instrument Serif',serif;font-size:19px">3300</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Pedikir &amp; trajni lak</span><span style="font-family:'Instrument Serif',serif;font-size:19px">3600</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Običan lak / obrada bez pedikira</span><span style="font-family:'Instrument Serif',serif;font-size:19px">2900</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0"><span>Trajni lak bez pedikira</span><span style="font-family:'Instrument Serif',serif;font-size:19px">3100</span></div>
+          </div>
+        </div>
+
+        <div style="margin-top:56px;background:#59181E;color:#F3E6D8;padding:44px 44px 40px;display:grid;grid-template-columns:280px 1fr;gap:64px">
+          <div>
+            <h3 style="font-family:'Instrument Serif',serif;font-size:32px;margin:0 0 10px;font-weight:400;color:#FBF7F0">Brzi termini</h3>
+            <p style="font-size:15px;line-height:1.6;margin:0;color:#C9A78F">30 minuta po tretmanu. Jedini u gradu.</p>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:14px 0;border-bottom:1px solid rgba(243,230,216,.22)"><span>Običan lak - manikir ili pedikir</span><span style="font-family:'Instrument Serif',serif;font-size:19px">1600 / 1800</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:14px 0;border-bottom:1px solid rgba(243,230,216,.22)"><span>Trajni lak - manikir ili pedikir</span><span style="font-family:'Instrument Serif',serif;font-size:19px">2400 / 2600</span></div>
+            <div style="display:flex;justify-content:space-between;gap:24px;padding:14px 0;align-items:baseline"><span style="color:#E8B892">Mesečni paket - običan lak (4 termina u 30 dana)</span><span style="font-family:'Instrument Serif',serif;font-size:22px;color:#E8B892">5000</span></div>
+          </div>
+        </div>
+
+        <div style="margin-top:56px">
+          <h3 style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23;margin:0 0 6px;font-weight:500">Dodatak</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 80px">
+            <div>
+              <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Rekonstrukcija (po noktu)</span><span style="font-family:'Instrument Serif',serif;font-size:19px">300</span></div>
+              <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>French, Chrome / Art po noktu</span><span style="font-family:'Instrument Serif',serif;font-size:19px">500 / 100</span></div>
+              <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>OPI Keratin tretman</span><span style="font-family:'Instrument Serif',serif;font-size:19px">500</span></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Masaža šaka / stopala</span><span style="font-family:'Instrument Serif',serif;font-size:19px">500 / 1000</span></div>
+              <div style="display:flex;justify-content:space-between;gap:24px;padding:15px 0;border-bottom:1px solid #D6C9B2"><span>Depilacija šaka / stopala</span><span style="font-family:'Instrument Serif',serif;font-size:19px">250</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="radovi" style="padding:104px 0">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:0 48px;max-width:1240px;margin:0 auto 40px">
+        <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400">Radovi</h2>
+        <div style="display:flex;gap:8px">
+          <button onClick="{{ prevSlide }}" aria-label="Prethodne slike" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8592;</button>
+          <button onClick="{{ nextSlide }}" aria-label="Sledeće slike" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8594;</button>
+        </div>
+      </div>
+      <div ref="{{ trackRef }}" style="display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:0 48px">
+        <sc-for list="{{ radovi }}" as="foto" hint-placeholder-count="4">
+          <div role="img" aria-label="{{ foto.alt }}" style="flex:0 0 340px;scroll-snap-align:start;aspect-ratio:4/5;overflow:hidden;background-color:#E7DDCB;background-image:{{ foto.bg }};background-size:cover;background-position:center"></div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div id="recenzije" style="background:#E7DDCB;padding:104px 0">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:0 48px;max-width:1240px;margin:0 auto 48px">
+        <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400;max-width:22ch">Šta kažu klijenti</h2>
+        <div style="display:flex;gap:8px">
+          <button onClick="{{ prevReview }}" aria-label="Prethodne recenzije" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8592;</button>
+          <button onClick="{{ nextReview }}" aria-label="Sledeće recenzije" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8594;</button>
+        </div>
+      </div>
+      <div ref="{{ reviewRef }}" style="display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:0 48px">
+        <sc-for list="{{ recenzije }}" as="r" hint-placeholder-count="3">
+          <div style="flex:0 0 320px;box-sizing:content-box;scroll-snap-align:start;padding:0 40px;border-left:1px solid {{ r.linija }};display:flex;flex-direction:column;gap:20px">
+            <div style="color:#BD4E23;font-size:13px;letter-spacing:3px">{{ r.zvezde }}</div>
+            <p style="font-family:'Instrument Serif',serif;font-size:22px;line-height:1.42;margin:0;color:#2A1512;text-wrap:pretty">{{ r.tekst }}</p>
+            <span style="font-size:14px;color:#6E5647;margin-top:auto">{{ r.autor }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div id="o-nama" style="display:grid;grid-template-columns:1fr 1fr">
+      <div style="min-height:620px;background-color:#E7DDCB;background-image:url('assets/foto-bordo-detalj.jpg');background-size:cover;background-position:center"></div>
+      <div style="padding:104px 88px;display:flex;flex-direction:column;justify-content:center;gap:24px">
+        <span style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23">O nama</span>
+        <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400;line-height:1.1">Iza svakog termina stoje tri para ruku.</h2>
+        <p style="font-size:16.5px;line-height:1.75;color:#6E5647;margin:0;max-width:48ch;text-wrap:pretty">Studio vodi Jelena Drenovac, koja se noktima bavi godinama i za tim stolom je izgradila način rada kojem se klijenti vraćaju. Uz nju rade Pava i Viktorija.</p>
+        <p style="font-size:16.5px;line-height:1.75;color:#6E5647;margin:0;max-width:48ch;text-wrap:pretty">Radimo po terminu, jedna klijentkinja u jednom trenutku. To znači da nema čekanja, da za svaki nokat ima vremena i da posle tretmana ne morate ništa da popravljate sami.</p>
+        <div style="display:flex;gap:0;margin-top:10px;border-top:1px solid #D6C9B2">
+          <span style="padding:16px 24px 0 0;font-size:15px;color:#2A1512">Jelena</span>
+          <span style="padding:16px 24px 0;font-size:15px;color:#2A1512;border-left:1px solid #D6C9B2">Pava</span>
+          <span style="padding:16px 0 0 24px;font-size:15px;color:#2A1512;border-left:1px solid #D6C9B2">Viktorija</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:96px 48px;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+      <div>
+        <h3 style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23;margin:0 0 22px;font-weight:500">Radno vreme</h3>
+        <div style="display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #DED3BF"><span>Ponedeljak - Petak</span><span style="font-family:'Instrument Serif',serif;font-size:19px">07:00 - 20:00</span></div>
+        <div style="display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #DED3BF"><span>Subota</span><span style="font-family:'Instrument Serif',serif;font-size:19px">07:00 - 14:00</span></div>
+        <div style="display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #DED3BF"><span>Nedelja</span><span style="font-family:'Instrument Serif',serif;font-size:19px">Zatvoreno</span></div>
+      </div>
+      <div>
+        <h3 style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23;margin:0 0 22px;font-weight:500">Lokacija</h3>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:15px 0;border-bottom:1px solid #DED3BF">
+          <span>27. marta 21A, Beograd, Palilula</span>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Drenovac%20Studio%2C%2027.%20marta%2021A%2C%20Beograd&amp;query_place_id=ChIJbeOzQT57WkcRwUkLwlxl-fk" target="_blank" rel="noopener" style="font-size:14px;white-space:nowrap;border-bottom:1px solid #C6B69B;padding-bottom:1px">Otvori u mapama</a>
+        </div>
+        <div style="margin-top:22px;height:240px;overflow:hidden">
+          <iframe title="Mapa - 27. marta 21A, Beograd" src="https://maps.google.com/maps?q=27.%20marta%2021A%2C%20Beograd&amp;z=16&amp;output=embed" style="width:100%;height:100%;border:0;display:block;filter:grayscale(.35)" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="kontakt" style="background:#59181E;color:#F3E6D8;padding:112px 48px">
+      <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:88px;align-items:start">
+        <div style="display:flex;flex-direction:column;gap:26px">
+          <h2 style="font-family:'Instrument Serif',serif;font-size:60px;margin:0;font-weight:400;line-height:1;color:#FBF7F0;letter-spacing:-.01em;white-space:nowrap">Zakažite termin</h2>
+          <p style="font-size:17px;line-height:1.7;color:#C9A78F;margin:0;max-width:44ch;text-wrap:pretty">Termini se zakazuju porukom na WhatsApp. Napišite koja vas usluga zanima i kada bi vam odgovaralo, a mi ćemo predložiti prvi slobodan termin.</p>
+          <a href="{{ whatsappHref }}" target="_blank" rel="noopener" style="align-self:flex-start;display:flex;align-items:center;gap:12px;background:#FBF7F0;color:#2A1512;padding:16px 28px;font-size:16px" style-hover="background:#BD4E23;color:#FBF7F0">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.53.05-1.03.08-2.7-.62-2.03-.85-3.42-2.96-3.53-3.1-.11-.14-.87-1.16-.87-2.21 0-1.05.55-1.57.75-1.79.2-.22.43-.27.58-.27.15 0 .3 0 .43.01.14.01.32-.05.5.38.19.44.64 1.56.7 1.68.06.11.1.25.02.4-.08.15-.15.24-.29.4-.14.15-.22.25-.32.4-.1.15-.21.31-.09.53.12.22.53.87 1.13 1.41.78.7 1.43.93 1.65 1.04.22.11.35.09.48-.06.13-.14.56-.65.71-.87.15-.22.3-.18.5-.11.2.07 1.27.6 1.49.71.22.11.36.16.42.26.05.09.05.6-.19 1.28z"/></svg>
+            <span>{{ whatsappNumber }}</span>
+          </a>
+          <div style="display:flex;gap:20px;align-items:center;margin-top:14px">
+            <span style="font-size:14px;color:#C9A78F">Zapratite nas</span>
+            <a href="{{ instagramHref }}" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex;color:#F3E6D8" style-hover="color:#E8B892">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4.5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+            </a>
+            <a href="{{ tiktokHref }}" target="_blank" rel="noopener" aria-label="TikTok" style="display:flex;color:#F3E6D8" style-hover="color:#E8B892">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.85-2.48V9.79a5.67 5.67 0 1 0 4.94 5.62V8.9a7.34 7.34 0 0 0 4.28 1.38V7.19a4.28 4.28 0 0 1-3.22-1.37z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div style="padding:22px 0;border-top:1px solid rgba(243,230,216,.22)">
+            <span style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#C9A78F">Odgovaramo</span>
+            <p style="font-size:16px;line-height:1.65;margin:10px 0 0;color:#F3E6D8">U toku radnog dana, najčešće u roku od nekoliko sati.</p>
+          </div>
+          <div style="padding:22px 0;border-top:1px solid rgba(243,230,216,.22)">
+            <span style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#C9A78F">Otkazivanje</span>
+            <p style="font-size:16px;line-height:1.65;margin:10px 0 0;color:#F3E6D8">Ako niste u mogućnosti da dođete na termin, molimo da nam javite najmanje 24h unapred.</p>
+          </div>
+          <div style="padding:22px 0;border-top:1px solid rgba(243,230,216,.22);border-bottom:1px solid rgba(243,230,216,.22)">
+            <span style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#C9A78F">Prvi dolazak</span>
+            <p style="font-size:16px;line-height:1.65;margin:10px 0 0;color:#F3E6D8">Za brze termine savetujemo da nokti budu bez materijala.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="{{ whatsappHref }}" target="_blank" rel="noopener" aria-label="Zakažite termin na WhatsApp" style="position:fixed;right:24px;bottom:24px;z-index:50;display:flex;align-items:center;gap:10px;background:#59181E;color:#FBF7F0;padding:14px 20px;font-size:15px" style-hover="background:#BD4E23">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.53.05-1.03.08-2.7-.62-2.03-.85-3.42-2.96-3.53-3.1-.11-.14-.87-1.16-.87-2.21 0-1.05.55-1.57.75-1.79.2-.22.43-.27.58-.27.15 0 .3 0 .43.01.14.01.32-.05.5.38.19.44.64 1.56.7 1.68.06.11.1.25.02.4-.08.15-.15.24-.29.4-.14.15-.22.25-.32.4-.1.15-.21.31-.09.53.12.22.53.87 1.13 1.41.78.7 1.43.93 1.65 1.04.22.11.35.09.48-.06.13-.14.56-.65.71-.87.15-.22.3-.18.5-.11.2.07 1.27.6 1.49.71.22.11.36.16.42.26.05.09.05.6-.19 1.28z"/></svg>
+      <span>Zakažite termin</span>
+    </a>
+
+    <footer style="background:#59181E;border-top:1px solid rgba(243,230,216,.22);padding:20px 48px;display:flex;gap:32px;font-size:13px;color:#C9A78F">
+      <span>Studio Drenovac © 2026</span>
+      <span>Nail studio, Beograd</span>
+    </footer>
+  </div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+381 65 2767 659&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Kontakt&quot;},&quot;whatsappMessage&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Zdravo! Zanima me termin u Studiju Drenovac.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Kontakt&quot;},&quot;instagram&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;@drenovac.studio&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Kontakt&quot;},&quot;tiktok&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;@drenovac.studio&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Kontakt&quot;}}">
+class Component extends DCLogic {
+  track = React.createRef();
+  reviews = React.createRef();
+  scrollBy(dir, ref) {
+    const el = (ref || this.track).current;
+    if (!el) return;
+    const card = el.firstElementChild;
+    const gap = parseFloat(getComputedStyle(el).gap) || 0;
+    const step = card ? card.getBoundingClientRect().width + gap : el.clientWidth / 3;
+    el.scrollBy({ left: dir * step * 2, behavior: 'smooth' });
+  }
+  renderVals() {
+    const num = this.props.whatsappNumber ?? '+381 65 2767 659';
+    const msg = this.props.whatsappMessage ?? 'Zdravo! Zanima me termin u Studiju Drenovac.';
+    return {
+      trackRef: this.track,
+      prevSlide: () => this.scrollBy(-1),
+      nextSlide: () => this.scrollBy(1),
+      reviewRef: this.reviews,
+      prevReview: () => this.scrollBy(-1, this.reviews),
+      nextReview: () => this.scrollBy(1, this.reviews),
+      recenzije: [
+        ['Sve preporuke za ovaj salon! Devojke su izuzetno ljubazne, profesionalne i uvek nasmejane. Studio je prelepo uređen, besprekorno čist, atmosfera prijatna. Rade veoma pedantno i precizno, tako da su nokti uvek savršeni.', 'Una Nišić'],
+        ['Drenovac studio je prvo mesto na kom sam poželela da manikir postane rutina, a ne samo luksuz za posebne prilike. Već jedva čekam svoje vreme za opuštanje, kaficu, muzikicu i ćaskanje sa Jecom!', 'Iva Matanović'],
+        ['Prezadovoljna sam uslugom u ovom nail studiju! Osoblje je izuzetno profesionalno, pažljivo i posvećeno svakom detalju, a rad je precizan i dugotrajan. Uvek mi je zadovoljstvo da dođem, jer pored savršenih noktiju dobijem i trenutak mira.', 'Snežana Knežević'],
+        ['Uvek savršeni nokti, uredni, gel lak je uvek nanešen tanko i ravnomerno. Kao prirodni nokti samo 10 puta lepši. Sve preporuke za salon, prelep ambijent, dobra muzika i mir. 10/10', 'Marija Simić'],
+        ['Izuzetno sam zadovoljna kvalitetom rada! Nokti uvek izgledaju fantastično i precizno su urađeni. Osim toga, usluga je za svaku pohvalu - Jeca je preljubazna, profesionalna i stvara veoma prijatnu atmosferu.', 'Milica Cvijović', 4],
+        ['Uredno, pedantno, detaljno, Jelena je moj izbor već tri pune godine, zaista jako lepa usluga, sve je čisto i sterilno što je meni lično najvažnije! Svaka preporuka', 'Ana Nikolić', 4],
+        ['Odlična usluga, radila sam pedikir i manikir sa običnim lakom. Prezadovoljna. Pava radi fenomenalno i baš je pedantna, nemam zamerku nijednu. Topla preporuka i za sam salon i ambijent, sve je 10ka.', 'Vanja Radović'],
+        ['Nikada nisam imala lepše i kvalitetnije nokte. Usluga savršena, ambijent za 10! Sve preporuke za Drenovac studio!', 'Saveta Dulić'],
+        ['Salon za svaku preporuku! Pava je sjajna, prijatna devojka, detaljna, pedantna. Salon estetika - čista 10ka, higijena na nivou!', 'Maria Pasku'],
+        ['Svaka preporuka za naš divni Drenovac Studio, višegodišnje zadovoljstvo. Vrlo čisto, uredno i sterilno.', 'Jelena Milivojević'],
+        ['Novo omiljeno mesto za muški manikir, a vala i pedikir. Pohvale za Jelenu.', 'Dejan Josić'],
+        ['Divan salon, jako jako prijatna atmosfera, pobrinuli su se sa svaki detalj. Sve pohvale za rad i pedantnost, preporuka kao kuca!', 'Milena Milojević']
+      ].map(([tekst, autor, n], i) => ({ tekst, autor, zvezde: '★'.repeat(n || 5), linija: i === 0 ? 'transparent' : '#D0C2A9' })),
+      radovi: [
+        ['assets/foto-bordo.jpg', 'Bordo trajni lak'],
+        ['assets/foto-cokolada.jpg', 'Čokoladni trajni lak'],
+        ['assets/foto-bela.jpg', 'Mlečno beli trajni lak'],
+        ['assets/foto-narandzasta.jpg', 'Pedikir, trajni lak'],
+        ['assets/foto-bordo-detalj.jpg', 'Detalj trajnog laka'],
+        ['assets/foto-kafa.jpg', 'Trajni lak, ekspresni termin']
+      ].map(([src, alt]) => ({ bg: 'url("' + src + '")', alt })),
+      whatsappNumber: num,
+      whatsappHref: 'https://wa.me/' + num.replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(msg),
+      instagramHref: 'https://instagram.com/' + (this.props.instagram ?? '@drenovac.studio').replace('@', ''),
+      tiktokHref: 'https://www.tiktok.com/' + (this.props.tiktok ?? '@drenovac.studio')
+    };
+  }
+}
+</script>
+</body>
+</html>
