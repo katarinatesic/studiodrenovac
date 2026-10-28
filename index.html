@@ -28,7 +28,7 @@
 
   <div style="width:100%;background:#F7F3EC;font-family:'Instrument Sans',sans-serif;color:#2A1512;font-size:16px">
 
-    <header style="display:flex;align-items:center;justify-content:space-between;padding:22px 48px;border-bottom:1px solid #E2D8C6">
+    <header style="display:flex;align-items:center;justify-content:space-between;padding:22px max(48px, calc((100% - 1144px) / 2));border-bottom:1px solid #E2D8C6">
       <img src="assets/logo-bordo.png" alt="Studio Drenovac" style="height:50px;width:auto;display:block">
       <nav style="display:flex;gap:32px;font-size:15px">
         <a href="#usluge">Usluge</a>
@@ -48,7 +48,7 @@
     <div style="position:relative;height:660px;overflow:hidden">
       <img src="assets/foto-kafa.jpg" alt="Trajni lak, ekspresni termin" style="width:100%;height:100%;object-fit:cover;display:block">
       <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(31,10,8,.85) 0%,rgba(31,10,8,.62) 42%,rgba(31,10,8,.34) 66%,rgba(31,10,8,0) 92%),linear-gradient(100deg,rgba(31,10,8,.55) 0%,rgba(31,10,8,.24) 52%,rgba(31,10,8,0) 82%)"></div>
-      <div style="position:absolute;left:48px;bottom:64px;max-width:600px;display:flex;flex-direction:column;gap:22px">
+      <div style="position:absolute;left:max(48px, calc((100% - 1144px) / 2));bottom:64px;max-width:600px;display:flex;flex-direction:column;gap:22px">
         <span style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#F6E7DA">Ekspresni termini</span>
         <h1 style="font-family:'Instrument Serif',serif;font-size:78px;line-height:.98;margin:0;font-weight:400;color:#FBF7F0;letter-spacing:-.01em">Sređeni nokti<br>za samo <em style="font-style:italic">30 minuta</em></h1>
         <p style="font-size:18px;line-height:1.6;max-width:38ch;color:#EBDDD0;margin:0;text-wrap:pretty">Ekspresni manikir i pedikir za dane kada nemate vremena, a želite uredne nokte.</p>
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div style="padding:104px 48px;max-width:1240px;margin:0 auto">
+    <div style="padding:104px max(48px, calc((100% - 1144px) / 2))">
       <h2 style="font-family:'Instrument Serif',serif;font-size:66px;line-height:1;margin:0 0 56px;font-weight:400;white-space:nowrap;letter-spacing:-.015em;color:#59181E">Jedini brzi termini u gradu</h2>
       <div style="display:grid;grid-template-columns:400px 1fr;gap:0 76px;align-items:stretch">
         <div style="background-color:#E7DDCB;background-image:url('assets/foto-bela.jpg');background-size:cover;background-position:center;min-height:520px"></div>
@@ -89,8 +89,8 @@
       </div>
     </div>
 
-    <div id="usluge" style="background:#E7DDCB;padding:104px 48px">
-      <div style="max-width:1240px;margin:0 auto">
+    <div id="usluge" style="background:#E7DDCB;padding:104px max(48px, calc((100% - 1144px) / 2))">
+      <div>
         <div style="display:flex;align-items:baseline;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid #59181E">
           <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400">Cenovnik</h2>
           <span style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6E5647">RSD</span>
@@ -144,14 +144,14 @@
     </div>
 
     <div id="radovi" style="padding:104px 0">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:0 48px;max-width:1240px;margin:0 auto 40px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:0 max(48px, calc((100% - 1144px) / 2));margin:0 0 40px">
         <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400">Radovi</h2>
         <div style="display:flex;gap:8px">
           <button onClick="{{ prevSlide }}" aria-label="Prethodne slike" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8592;</button>
           <button onClick="{{ nextSlide }}" aria-label="Sledeće slike" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8594;</button>
         </div>
       </div>
-      <div ref="{{ trackRef }}" style="display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:0 48px">
+      <div ref="{{ trackRef }}" style="display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:0 max(48px, calc((100% - 1144px) / 2));scroll-padding-inline:max(48px, calc((100% - 1144px) / 2))">
         <sc-for list="{{ radovi }}" as="foto" hint-placeholder-count="4">
           <div role="img" aria-label="{{ foto.alt }}" style="flex:0 0 340px;scroll-snap-align:start;aspect-ratio:4/5;overflow:hidden;background-color:#E7DDCB;background-image:{{ foto.bg }};background-size:cover;background-position:center"></div>
         </sc-for>
@@ -159,16 +159,16 @@
     </div>
 
     <div id="recenzije" style="background:#E7DDCB;padding:104px 0">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:0 48px;max-width:1240px;margin:0 auto 48px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:0 max(48px, calc((100% - 1144px) / 2));margin:0 0 48px">
         <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400;max-width:22ch">Šta kažu klijenti</h2>
         <div style="display:flex;gap:8px">
           <button onClick="{{ prevReview }}" aria-label="Prethodne recenzije" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8592;</button>
           <button onClick="{{ nextReview }}" aria-label="Sledeće recenzije" style="width:42px;height:42px;border:1px solid #C6B69B;background:transparent;color:#59181E;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" style-hover="background:#59181E;color:#FBF7F0;border-color:#59181E">&#8594;</button>
         </div>
       </div>
-      <div ref="{{ reviewRef }}" style="display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:0 48px">
+      <div ref="{{ reviewRef }}" style="display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:0 max(48px, calc((100% - 1144px) / 2));scroll-padding-inline:max(48px, calc((100% - 1144px) / 2))">
         <sc-for list="{{ recenzije }}" as="r" hint-placeholder-count="3">
-          <div style="flex:0 0 320px;box-sizing:content-box;scroll-snap-align:start;padding:0 40px;border-left:1px solid {{ r.linija }};display:flex;flex-direction:column;gap:20px">
+          <div style="flex:0 0 320px;box-sizing:content-box;scroll-snap-align:start;padding:0 40px 0 {{ r.levo }};border-left:1px solid {{ r.linija }};display:flex;flex-direction:column;gap:20px">
             <div style="color:#BD4E23;font-size:13px;letter-spacing:3px">{{ r.zvezde }}</div>
             <p style="font-family:'Instrument Serif',serif;font-size:22px;line-height:1.42;margin:0;color:#2A1512;text-wrap:pretty">{{ r.tekst }}</p>
             <span style="font-size:14px;color:#6E5647;margin-top:auto">{{ r.autor }}</span>
@@ -179,7 +179,7 @@
 
     <div id="o-nama" style="display:grid;grid-template-columns:1fr 1fr">
       <div style="min-height:620px;background-color:#E7DDCB;background-image:url('assets/foto-bordo-detalj.jpg');background-size:cover;background-position:center"></div>
-      <div style="padding:104px 88px;display:flex;flex-direction:column;justify-content:center;gap:24px">
+      <div style="padding:104px max(48px, calc((100vw - 1144px) / 2)) 104px 88px;display:flex;flex-direction:column;justify-content:center;gap:24px">
         <span style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23">O nama</span>
         <h2 style="font-family:'Instrument Serif',serif;font-size:44px;margin:0;font-weight:400;line-height:1.1">Iza svakog termina stoje tri para ruku.</h2>
         <p style="font-size:16.5px;line-height:1.75;color:#6E5647;margin:0;max-width:48ch;text-wrap:pretty">Studio vodi Jelena Drenovac, koja se noktima bavi godinama i za tim stolom je izgradila način rada kojem se klijenti vraćaju. Uz nju rade Pava i Viktorija.</p>
@@ -192,7 +192,7 @@
       </div>
     </div>
 
-    <div style="padding:96px 48px;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+    <div style="padding:96px max(48px, calc((100% - 1144px) / 2));display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
       <div>
         <h3 style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#BD4E23;margin:0 0 22px;font-weight:500">Radno vreme</h3>
         <div style="display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #DED3BF"><span>Ponedeljak - Petak</span><span style="font-family:'Instrument Serif',serif;font-size:19px">07:00 - 20:00</span></div>
@@ -211,8 +211,8 @@
       </div>
     </div>
 
-    <div id="kontakt" style="background:#59181E;color:#F3E6D8;padding:112px 48px">
-      <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:88px;align-items:start">
+    <div id="kontakt" style="background:#59181E;color:#F3E6D8;padding:112px max(48px, calc((100% - 1144px) / 2))">
+      <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:88px;align-items:start">
         <div style="display:flex;flex-direction:column;gap:26px">
           <h2 style="font-family:'Instrument Serif',serif;font-size:60px;margin:0;font-weight:400;line-height:1;color:#FBF7F0;letter-spacing:-.01em;white-space:nowrap">Zakažite termin</h2>
           <p style="font-size:17px;line-height:1.7;color:#C9A78F;margin:0;max-width:44ch;text-wrap:pretty">Termini se zakazuju porukom na WhatsApp. Napišite koja vas usluga zanima i kada bi vam odgovaralo, a mi ćemo predložiti prvi slobodan termin.</p>
@@ -252,7 +252,7 @@
       <span>Zakažite termin</span>
     </a>
 
-    <footer style="background:#59181E;border-top:1px solid rgba(243,230,216,.22);padding:20px 48px;display:flex;gap:32px;font-size:13px;color:#C9A78F">
+    <footer style="background:#59181E;border-top:1px solid rgba(243,230,216,.22);padding:20px max(48px, calc((100% - 1144px) / 2));display:flex;gap:32px;font-size:13px;color:#C9A78F">
       <span>Studio Drenovac © 2026</span>
       <span>Nail studio, Beograd</span>
     </footer>
@@ -293,7 +293,7 @@ class Component extends DCLogic {
         ['Svaka preporuka za naš divni Drenovac Studio, višegodišnje zadovoljstvo. Vrlo čisto, uredno i sterilno.', 'Jelena Milivojević'],
         ['Novo omiljeno mesto za muški manikir, a vala i pedikir. Pohvale za Jelenu.', 'Dejan Josić'],
         ['Divan salon, jako jako prijatna atmosfera, pobrinuli su se sa svaki detalj. Sve pohvale za rad i pedantnost, preporuka kao kuca!', 'Milena Milojević']
-      ].map(([tekst, autor, n], i) => ({ tekst, autor, zvezde: '★'.repeat(n || 5), linija: i === 0 ? 'transparent' : '#D0C2A9' })),
+      ].map(([tekst, autor, n], i) => ({ tekst, autor, zvezde: '★'.repeat(n || 5), linija: i === 0 ? 'transparent' : '#D0C2A9', levo: i === 0 ? '0px' : '40px' })),
       radovi: [
         ['assets/foto-bordo.jpg', 'Bordo trajni lak'],
         ['assets/foto-cokolada.jpg', 'Čokoladni trajni lak'],
